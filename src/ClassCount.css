@@ -1,0 +1,21 @@
+.btn-count {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.btn-count:hover {
+    background-color: darkred;
+  }
+
+  .di-1,.di-2{width: 50%; 
+    margin: 0 auto; 
+    padding: 50px; 
+    box-sizing: border-box;
+    background-color: lightblue; 
+  }
