@@ -15,7 +15,10 @@ import Grid from "@mui/material/Grid";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import axios from "axios";
-import myImage from "./my.jpg";
+import myImage from "../my.jpg";
+
+
+import { useNavigate } from "react-router-dom";
 
 const schema = yup.object().shape({
   email: yup.string().required("Email is required").email("Email is invalid"),
@@ -23,6 +26,8 @@ const schema = yup.object().shape({
 });
 
 function LoginPage() {
+  const navigate = useNavigate();
+
   const {
     handleSubmit,
     control,
@@ -41,7 +46,9 @@ function LoginPage() {
       );
       if (response.status === 200) {
         console.log("Login successful!");
-        window.location.href = "/home";
+        // window.location.href = "/home";
+        navigate("/dashboard/dashboard");
+         
       }
     } catch (error) {
       if (error.response.status === 401) {
