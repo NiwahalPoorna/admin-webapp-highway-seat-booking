@@ -114,7 +114,7 @@ function BookingPage() {
 
   return (
     <div style={{ marginLeft: "240px" ,marginTop:"100px  "}}>
-      <h1>Booking Table</h1>
+      <h1>Manage Booking</h1>
       <UserTable columns={columns} data={userData} />
     </div>
   );

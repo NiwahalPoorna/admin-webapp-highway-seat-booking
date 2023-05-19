@@ -96,7 +96,7 @@ function BusRootPage() {
 
   return (
     <div  style={{ marginLeft: "240px", marginTop: "100px  " }}>
-      <h1>Root manage Table</h1>
+      <h1>Manage Routes</h1>
       <Link to="/dashboard/root/AddRoot">
         <button>Add Root</button>
       </Link>

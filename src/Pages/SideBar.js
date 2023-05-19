@@ -57,7 +57,7 @@ function Sidebar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Company Name
+            Highway Bus Manegement System (Admin Panel) 
           </Typography>
         </Toolbar>
       </AppBar>

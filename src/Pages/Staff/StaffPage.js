@@ -84,7 +84,7 @@ function BusRootPage() {
 
   return (
     <div style={{ marginLeft: "240px" ,marginTop:"100px  "}}>
-      <h1>Staff Table</h1>
+      <h1>Manage Staff</h1>
       <Link to="/dashboard/staff/AddStaff">
         <button>Add Root</button>
       </Link>

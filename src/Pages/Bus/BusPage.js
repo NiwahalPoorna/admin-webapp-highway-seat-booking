@@ -77,7 +77,7 @@ function BusPage() {
 
   return (
     <div style={{ marginLeft: "240px" ,marginTop:"100px  "}}>
-      <h1>Bus manage Table</h1>
+      <h1>Manage Buses</h1>
       <Link to="/dashboard/bus/AddBusPage">
         <button>Add Bus</button>
       </Link>

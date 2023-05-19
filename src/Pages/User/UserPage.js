@@ -65,7 +65,7 @@ function UserPage() {
 
   return (
     <div style={{ marginLeft: "240px", marginTop: "100px" }}>
-      <h1>User Table</h1>
+      <h1>Manage Users</h1>
       <UserTable columns={columns} data={userData} />
     </div>
   );
