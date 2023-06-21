@@ -5,6 +5,7 @@ import * as yup from "yup";
 import Axios from "axios";
 
 import { useState } from "react";
+import { NavLink } from 'react-router-dom';
 
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
@@ -410,13 +411,16 @@ function RegistrationPage() {
                     Register
                   </Button>
                 </Grid>
-                {/* <Grid item xs={12}>
+                <Grid item xs={12}>
                 <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
+                <p>
+        Already have an account?{' '}
+        <NavLink to="/" variant="body2">
+          Sign in
+        </NavLink>
+      </p>
               </Grid>
-                </Grid> */}
+                </Grid>
               </Grid>
             </form>
           </Box>

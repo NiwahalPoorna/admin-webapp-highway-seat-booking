@@ -17,7 +17,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import axios from "axios";
 import myImage from "../my.jpg";
 
-
+import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const schema = yup.object().shape({
@@ -152,18 +152,14 @@ function LoginPage() {
               >
                 Sign In
               </Button>
-              {/* <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid> */}
+              <Grid container>
+                <p>
+                  Don't have an account?{" "}
+                  <NavLink to="/signup" variant="body2">
+                    Sign Up
+                  </NavLink>
+                </p>
+              </Grid>
             </Box>
           </Box>
         </Grid>

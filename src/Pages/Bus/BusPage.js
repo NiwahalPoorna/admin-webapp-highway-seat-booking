@@ -3,6 +3,10 @@ import UserTable from "../../Components/UserTable";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+import Button from "@mui/material/Button";
+
+
+
 function BusPage() {
   const [userData, setUserData] = useState([]);
 
@@ -78,9 +82,25 @@ function BusPage() {
   return (
     <div style={{ marginLeft: "240px" ,marginTop:"100px  "}}>
       <h1>Manage Buses</h1>
+      <div style={{ marginLeft: "1150px"  }}>
+      
       <Link to="/dashboard/bus/AddBusPage">
-        <button>Add Bus</button>
+       
+        <Button
+  type="submit"
+  
+  variant="contained"
+  color="primary"
+  sx={{ mt: 1 }}
+  
+>
+  Add Bus
+</Button>
+
+       
       </Link>
+
+      </div>
       <UserTable columns={columns} data={userData} />
     </div>
   );
